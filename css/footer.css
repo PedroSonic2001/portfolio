@@ -76,3 +76,24 @@
 .footer-redes a:hover img {
   filter: grayscale(0%) brightness(1);
 }
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+
+  .footer-redes {
+    justify-content: center; /* Centraliza os ícones de redes sociais no mobile */
+    gap: 15px;
+    margin: 0; /* Remove margens fixas */
+  }
+
+  .footer-redes img {
+    width: 60px; /* Reduz tamanho dos ícones em telas pequenas */
+    height: 60px;
+  }
+}
